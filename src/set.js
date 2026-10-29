@@ -1,6 +1,6 @@
 // The room: walnut (solid procedural grain), linen cloth, plaster, a live window-light cookie, substrate layers.
-import { THREE } from '../../src/core/engine.js';
-import { bakeTexture, NOISE_GLSL } from '../../src/core/textures.js';
+import { THREE } from './core/engine.js';
+import { bakeTexture, NOISE_GLSL } from './core/textures.js';
 import { mergeVertices } from 'three/examples/jsm/utils/BufferGeometryUtils.js';
 
 const N3 = /* glsl */`

@@ -4,7 +4,7 @@
 // B = drip trail · A = height of running drops (redrawn every frame). The glass material (MeshPhysicalMaterial with
 // transmission) reads it to decide, per pixel, how frosted the view through the glass is, how milky the fog is and
 // where the water beads bend the light.
-import { THREE } from '../../src/core/engine.js';
+import { THREE } from './core/engine.js';
 
 const TAU = Math.PI * 2;
 const N_PROFILE = 180;

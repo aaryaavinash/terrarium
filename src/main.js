@@ -1,10 +1,9 @@
 import './tailwind.css';
-import { Engine, THREE, normalize, prepModel, damp, clamp, smooth, lerp, studioEnvironment } from '../../src/core/engine.js';
-import { Assets } from '../../src/core/assets.js';
-import { Pointer } from '../../src/core/input.js';
-import { smoothScroll, gsap, reveal } from '../../src/core/scroll.js';
-// ORIGINAL (preserved, not deleted — disabled by comment): import { preloader, cursor, magnetic, worldNav } from '../../src/core/ui.js';
-import { preloader, cursor, magnetic } from '../../src/core/ui.js';
+import { Engine, THREE, normalize, prepModel, damp, clamp, smooth, lerp, studioEnvironment } from './core/engine.js';
+import { Assets } from './core/assets.js';
+import { Pointer } from './core/input.js';
+import { smoothScroll, gsap, reveal } from './core/scroll.js';
+import { preloader, cursor, magnetic } from './core/ui.js';
 import { FogGlass, bellProfile } from './glass.js';
 import { walnutMaterial, linenTextures, plasterTextures, WindowCookie, walnutBase, substrateLayers } from './set.js';
 
@@ -106,9 +105,9 @@ hero.group.position.y = base.grooveY;
 stage.add(hero.group);
 
 const CLIMATES = [
-  { key: 'moss', file: 'models/terrarium/moss.glb', width: 1.1, yaw: -2.3, name: 'Moss Forest', no: '0412', fog: 1, fogMax: 1, streak: [0.07, 0.31], spore: [1.0, 0.96, 0.78], blink: 0, count: 55 },
-  { key: 'desert', file: 'models/terrarium/desert.glb', width: 1.12, yaw: 0.25, name: 'High Desert', no: '0388', fog: 0.6, fogMax: 0.6, streak: [0.06, 0.24], spore: [1.0, 0.85, 0.55], blink: 0, count: 50 },
-  { key: 'tropic', file: 'models/terrarium/tropic.glb', width: 1.08, yaw: 0.1, name: 'Cloud Tropic', no: '0431', fog: 1, fogMax: 0.6, streak: [0.13, 0.4], spore: [0.8, 1.0, 0.45], blink: 1, count: 46 },
+  { key: 'moss', file: 'models/moss.glb', width: 1.1, yaw: -2.3, name: 'Moss Forest', no: '0412', fog: 1, fogMax: 1, streak: [0.07, 0.31], spore: [1.0, 0.96, 0.78], blink: 0, count: 55 },
+  { key: 'desert', file: 'models/desert.glb', width: 1.12, yaw: 0.25, name: 'High Desert', no: '0388', fog: 0.6, fogMax: 0.6, streak: [0.06, 0.24], spore: [1.0, 0.85, 0.55], blink: 0, count: 50 },
+  { key: 'tropic', file: 'models/tropic.glb', width: 1.08, yaw: 0.1, name: 'Cloud Tropic', no: '0431', fog: 1, fogMax: 0.6, streak: [0.13, 0.4], spore: [0.8, 1.0, 0.45], blink: 1, count: 46 },
 ];
 const worlds = CLIMATES.map(() => { const h = new THREE.Group(); h.position.y = base.top; h.visible = false; turntable.add(h); return h; });
 worlds[0].visible = true;
@@ -614,7 +613,6 @@ function startIntro() {
   gsap.to(INTRO_TEXT, { opacity: 1, y: 0, duration: 1.3, ease: 'power3.out', stagger: 0.07, delay: 0.95 });
   ghostWipe(hero, { dur: 2.0, delay: 1.5, v0: 0.07, v1: 0.31, span: 0.3, wave: 0.02 }).then(() => { intro.done = true; ghost.last = engine.time; window.__introDone = true; });
 }
-// ORIGINAL (preserved, not deleted — disabled by comment): worldNav('terrarium', { theme: 'light', corner: 'bl' });
 cursorApi = cursor({ color: '#22281f', blend: 'normal', size: 30 });
 magnetic();
 const lenis = smoothScroll({ lerp: 0.085 });

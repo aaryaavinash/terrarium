@@ -1,4 +1,4 @@
-# 04 · Bell & Moss — "Wipe the glass. Meet the world inside."
+# Bell & Moss — "Wipe the glass. Meet the world inside."
 Brand: **Bell & Moss** — a London studio building sealed glass-cloche terrariums that live for decades without watering.
 
 ## Signature interaction
@@ -7,7 +7,7 @@ slight dispersion) covers a living miniature world. **The inside of the glass is
 wipes it clear**: raycast the cloche, paint the hit UVs into a canvas/render-target mask; the mask drives glass roughness
 and a milky condensation tint (fogged = frosted, wiped = crystal clear) plus a droplet normal map; the fog slowly re-forms
 over ~8 s; droplets bead at wiped edges and run down. It must be obvious and satisfying.
-- **Three climates**: moss forest (`models/terrarium/moss.glb`), desert (`desert.glb`), tropical (`tropic.glb`). Switching lifts
+- **Three climates**: moss forest (`models/moss.glb`), desert (`desert.glb`), tropical (`tropic.glb`). Switching lifts
   the cloche (animated), the walnut base turns, the world swaps, the cloche descends and fogs over again.
 - Tiny floating spores/fireflies inside; soft window light from the left with a real shadow, gentle AO.
 

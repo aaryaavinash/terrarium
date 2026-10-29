@@ -1,0 +1,18 @@
+// ORIGINAL (preserved, not deleted — disabled by comment): previous nested paths
+// import { THREE } from '../../src/core/engine.js';
+// import { bakeTexture, NOISE_GLSL } from '../../src/core/textures.js';
+// import { Engine, THREE, normalize, prepModel, damp, clamp, smooth, lerp, studioEnvironment } from '../../src/core/engine.js';
+// import { Assets } from '../../src/core/assets.js';
+// import { Pointer } from '../../src/core/input.js';
+// import { smoothScroll, gsap, reveal } from '../../src/core/scroll.js';
+// // ORIGINAL (preserved, not deleted — disabled by comment): import { preloader, cursor, magnetic, worldNav } from '../../src/core/ui.js';
+// import { preloader, cursor, magnetic } from '../../src/core/ui.js';
+//   { key: 'moss', file: 'models/terrarium/moss.glb', width: 1.1, yaw: -2.3, name: 'Moss Forest', no: '0412', fog: 1, fogMax: 1, streak: [0.07, 0.31], spore: [1.0, 0.96, 0.78], blink: 0, count: 55 },
+//   { key: 'desert', file: 'models/terrarium/desert.glb', width: 1.12, yaw: 0.25, name: 'High Desert', no: '0388', fog: 0.6, fogMax: 0.6, streak: [0.06, 0.24], spore: [1.0, 0.85, 0.55], blink: 0, count: 50 },
+//   { key: 'tropic', file: 'models/terrarium/tropic.glb', width: 1.08, yaw: 0.1, name: 'Cloud Tropic', no: '0431', fog: 1, fogMax: 0.6, streak: [0.13, 0.4], spore: [0.8, 1.0, 0.45], blink: 1, count: 46 },
+// // ORIGINAL (preserved, not deleted — disabled by comment): worldNav('terrarium', { theme: 'light', corner: 'bl' });
+// import { THREE } from '../../src/core/engine.js';
+//   <link rel="stylesheet" href="./examples/terrarium/style.css">
+//   <script type="module" src="./examples/terrarium/main.js"></script>
+// // ORIGINAL (preserved, not deleted — disabled by comment): import { preloader, cursor, magnetic, worldNav } from './core/ui.js';
+// // ORIGINAL (preserved, not deleted — disabled by comment): worldNav('terrarium', { theme: 'light', corner: 'bl' });

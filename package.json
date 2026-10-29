@@ -1,7 +1,7 @@
 {
   "name": "terrarium",
   "private": true,
-  "description": "Standalone Bell & Moss world from Dioramas.",
+  "description": "An imagined London workshop for sealed, hand-blown terrariums.",
   "license": "MIT",
   "version": "0.1.0",
   "type": "module",
