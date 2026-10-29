@@ -1,8 +1,10 @@
+import './tailwind.css';
 import { Engine, THREE, normalize, prepModel, damp, clamp, smooth, lerp, studioEnvironment } from '../../src/core/engine.js';
 import { Assets } from '../../src/core/assets.js';
 import { Pointer } from '../../src/core/input.js';
 import { smoothScroll, gsap, reveal } from '../../src/core/scroll.js';
-import { preloader, cursor, magnetic, worldNav } from '../../src/core/ui.js';
+// ORIGINAL (preserved, not deleted — disabled by comment): import { preloader, cursor, magnetic, worldNav } from '../../src/core/ui.js';
+import { preloader, cursor, magnetic } from '../../src/core/ui.js';
 import { FogGlass, bellProfile } from './glass.js';
 import { walnutMaterial, linenTextures, plasterTextures, WindowCookie, walnutBase, substrateLayers } from './set.js';
 
@@ -612,7 +614,7 @@ function startIntro() {
   gsap.to(INTRO_TEXT, { opacity: 1, y: 0, duration: 1.3, ease: 'power3.out', stagger: 0.07, delay: 0.95 });
   ghostWipe(hero, { dur: 2.0, delay: 1.5, v0: 0.07, v1: 0.31, span: 0.3, wave: 0.02 }).then(() => { intro.done = true; ghost.last = engine.time; window.__introDone = true; });
 }
-worldNav('terrarium', { theme: 'light', corner: 'bl' });
+// ORIGINAL (preserved, not deleted — disabled by comment): worldNav('terrarium', { theme: 'light', corner: 'bl' });
 cursorApi = cursor({ color: '#22281f', blend: 'normal', size: 30 });
 magnetic();
 const lenis = smoothScroll({ lerp: 0.085 });
